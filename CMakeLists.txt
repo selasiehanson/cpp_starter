@@ -4,7 +4,7 @@ if (CMAKE_COMPILER_IS_GNUCC)
   option(ENABLE_COVERAGE "Enable Coeverage Reporting to gcc/clang" FALSE) 
 
   if (ENABLE_COVERAGE) 
-    add_compile_options(--coverage -00)
+    add_compile_options(--coverage -O0)
   endif()
 
 endif()
